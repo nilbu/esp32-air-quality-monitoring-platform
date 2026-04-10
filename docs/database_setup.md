@@ -23,6 +23,6 @@ assistant responses
 embeddings for similarity search
 timestamps
 
-##Notes
+## Notes
 
 The workflow uses this table to retrieve relevant previous messages and build context for follow-up questions.
