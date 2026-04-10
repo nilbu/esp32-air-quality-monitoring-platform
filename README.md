@@ -4,7 +4,7 @@ IoT air quality monitoring platform based on ESP32, PMS5003 and BME280, with Goo
 
 ---
 
-## Features
+# Features
 
 - PM1 / PM2.5 / PM10 measurement
 - Temperature, humidity, and pressure measurement
