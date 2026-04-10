@@ -1,14 +1,14 @@
 # ESP32 Air Quality Monitoring Platform
 
-IoT air quality monitoring platform based on ESP32, PMS5003 and BME280, with Google Sheets logging, n8n automation, Telegram integration and PostgreSQL/pgvector conversational memory.
+IoT air quality monitoring platform based on ESP32, PMS5003 and BME280, with Google Sheets logging, n8n automation, Telegram integration, and PostgreSQL/pgvector conversational memory.
 
 ---
 
 ## Features
 
 - PM1 / PM2.5 / PM10 measurement
-- Temperature, humidity and pressure measurement
-- Median filter and EMA smoothing
+- Temperature, humidity, and pressure measurement
+- Median filtering and EMA smoothing
 - Humidity correction for PM values
 - Sensor duty cycle and cleaning cycle
 - WiFi data transmission
@@ -30,11 +30,11 @@ IoT air quality monitoring platform based on ESP32, PMS5003 and BME280, with Goo
 
 ## System Architecture
 
+The diagram below shows the core sensor and cloud logging pipeline:
+
 Sensors → ESP32 → WiFi → Google Apps Script → Google Sheets
 
-Extended flow: Google Sheets → n8n → PostgreSQL + pgvector memory → Telegram
-
-![Architecture](images/system_architecture.jpg)
+![System Architecture](images/system_architecture.jpg)
 
 ---
 
@@ -48,7 +48,7 @@ Breadboard prototype of the air quality monitoring station:
 
 ## Results
 
-Example sensor records logged to Google Sheets:
+Example sensor data logged to Google Sheets:
 
 ![Google Sheets Data](images/google_sheets_data.png)
 
@@ -74,6 +74,10 @@ Additional setup files are available in the repository:
 
 ## Integrations Preview
 
+Extended integration flow:
+
+Google Sheets → n8n → PostgreSQL + pgvector memory → Telegram
+
 Example n8n workflow:
 
 ![n8n Workflow](images/n8n_workflow.png)
@@ -82,9 +86,9 @@ Example Telegram interaction:
 
 ![Telegram Example](images/telegram_example.jpg)
 
+Example sanitized n8n workflow export used for Telegram interaction, voice transcription, OpenWeather enrichment, and PostgreSQL/pgvector-based conversational memory:
 
-Example n8n workflow export used for Telegram interaction, voice transcription, OpenWeather enrichment and PostgreSQL/pgvector-based conversational memory:
-- [telegram-workflow.json](n8n/telegram-workflow.json)
+- [telegram-weather-workflow-sanitized.json](n8n/telegram-weather-workflow-sanitized.json)
 
 ---
 
