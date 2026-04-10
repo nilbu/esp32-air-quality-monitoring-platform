@@ -68,7 +68,7 @@ Breadboard prototype of the air quality monitoring station:
 
 ## Documentation
 
-![Docs](air_quality_station_documentation.pdf)
+![Documentacion](docs/air_quality_station_documentation.pdf)
 
 ---
 
