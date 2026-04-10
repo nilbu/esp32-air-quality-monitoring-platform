@@ -86,7 +86,7 @@ Example Telegram interaction:
 
 ![Telegram Example](images/telegram_example.jpg)
 
-Example sanitized n8n workflow export used for Telegram interaction, voice transcription, OpenWeather enrichment, and PostgreSQL/pgvector-based conversational memory:
+Example n8n workflow export used for Telegram interaction, voice transcription, OpenWeather enrichment, and PostgreSQL/pgvector-based conversational memory:
 
 - [telegram-workflow.json](n8n/telegram-workflow.json)
 
