@@ -6,14 +6,28 @@ IoT air quality monitoring system based on ESP32, PMS5003 and BME280.
 
 ## Features
 
+### Embedded sensing
 - PM1 / PM2.5 / PM10 measurement (PMS5003)
-- Temperature, humidity, pressure (BME280)
+- Temperature, humidity, pressure measurement (BME280)
 - Median filter (removes sensor spikes)
 - EMA filter (smooth environmental data)
 - Humidity correction for PM measurements
+- Physical validation: PM1 ≤ PM2.5 ≤ PM10
+
+### Sensor reliability
 - Sensor duty cycle (reduced wear and heating)
 - Auto clean cycle (improves long-term stability)
-- Data logging to Google Sheets
+- Power filtering with capacitors for more stable operation
+
+### Cloud logging
+- Data transmission over WiFi
+- HTTP integration with Google Apps Script
+- Automatic logging to Google Sheets
+
+### Automation and integrations
+- Ready for n8n workflow automation
+- Designed for Telegram-based user interaction
+- Extendable with external weather data (e.g. OpenWeather)
 
 ---
 
