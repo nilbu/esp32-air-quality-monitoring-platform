@@ -15,6 +15,7 @@ IoT air quality monitoring platform based on ESP32, PMS5003 and BME280, with dat
 - Google Sheets logging via Google Apps Script
 - n8n workflow integration
 - Telegram-based interaction
+- PostgreSQL + pgvector memory for conversational context
 
 ---
 
@@ -31,7 +32,7 @@ IoT air quality monitoring platform based on ESP32, PMS5003 and BME280, with dat
 
 Sensors → ESP32 → WiFi → Google Apps Script → Google Sheets
 
-Future extension: Google Sheets → n8n → Telegram
+Extended flow: Google Sheets → n8n → PostgreSQL + pgvector memory → Telegram
 
 ![Architecture](images/system_architecture.jpg)
 
@@ -70,7 +71,7 @@ Example Telegram interaction:
 ![Telegram Example](images/telegram_example.jpg)
 
 
-n8n workflow export for Telegram, OpenWeather and AI response handling:
+Example n8n workflow export used for Telegram interaction, voice transcription, OpenWeather enrichment and PostgreSQL/pgvector-based conversational memory:
 - [telegram-workflow.json](n8n/telegram-workflow.json)
 
 ---
