@@ -69,7 +69,7 @@ Example Telegram interaction:
 ![Telegram Example](images/telegram_example.jpg)
 
 
-Sanitized n8n workflow export for Telegram, OpenWeather and AI response handling:
+n8n workflow export for Telegram, OpenWeather and AI response handling:
 - [telegram-workflow.json](n8n/telegram-workflow.json)
 
 ---
