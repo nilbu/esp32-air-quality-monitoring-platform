@@ -72,6 +72,14 @@ Breadboard prototype of the air quality monitoring station:
 
 ---
 
+## Results
+
+Example data logged to Google Sheets:
+
+![Google Sheets Data](images/google_sheets_data.png)
+
+---
+
 ## Author
 
 Tomek B
